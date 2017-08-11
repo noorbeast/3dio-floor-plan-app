@@ -1,0 +1,20 @@
+{
+  "name": "3dio-floor-plan-to-3d-app",
+  "version": "0.0.1-beta.1",
+  "description": "Convert floor plan images into 3d models using 3d.io API",
+  "homepage": "https://floorplan.3d.io",
+  "repository": "archilogic-com/3dio-floor-plan-to-3d-app",
+  "license": "MIT",
+  "author": {
+    "name": "archilogic",
+    "email": "dev.rocks@archilogic.com",
+    "url": "https://archilogic.com"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "3dio": "^1.0.0-beta.41",
+    "instant-api": "^1.0.0"
+  }
+}
