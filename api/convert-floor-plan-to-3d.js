@@ -1,10 +1,12 @@
-const configs = require('../configs.js')
 const io3d = require('3dio')
+const url = require('url')
+const configs = require('../configs.js')
 
 module.exports = function convertFloorPlanTo3d (rpc) {
 
   // params
   const floorPlan = rpc.params.floorPlan
+  const address = rpc.params.address
   const email = rpc.params.email
 
   // TODO: Add some authetication
@@ -12,11 +14,12 @@ module.exports = function convertFloorPlanTo3d (rpc) {
 
   // run
   io3d.floorPlan.convertToBasic3dModel({
-    secretKey: configs.secretKey, // FIXME: does this belong here? it's not a method parameter after all
     floorPlan: floorPlan,
-    callback: configs.url + 'conversionCallback'
+    address: address,
+    callback: configs.url
   }).then(conversionId => {
 
+    // success
     console.log('Floor plan conversion request has been accepted and has the following conversionId', conversionId)
     rpc.sendResult({ conversionId: conversionId })
 

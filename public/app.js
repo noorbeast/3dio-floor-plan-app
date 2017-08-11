@@ -17,9 +17,10 @@ function convertFloorPlanTo3d (floorPlanUrl) {
 
   var jsonRpc2Message = {
     jsonrpc: '2.0',
-    method: 'convertFloorPlanTo3d',
+    method: 'FloorPlan.convertToBasic3dModel',
     params: {
-      floorPlan: floorPlanUrl
+      floorPlan: floorPlanUrl,
+      address: 'Sugar Town'
     },
     id: Math.round(Math.random()*1e20)
   }
