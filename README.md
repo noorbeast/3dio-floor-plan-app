@@ -36,6 +36,6 @@ FIREBASE_PRIVATE_KEY | -----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...
 FIREBASE_CLIENT_EMAIL | xyz@your-project-id.iam.gserviceaccount.com
 FIREBASE_DATABASE_URL | https://your-project-id.firebaseio.com
 
-4. **Modify email messages to your customers in:**
+4. **Optional: Modify email messages to your customers in:**
    * api/convert-floor-plan-to-3d.js
    * api/on-conversion-status-update.js
