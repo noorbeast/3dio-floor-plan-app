@@ -1,10 +1,12 @@
-3d.io Floor Plan App
+# 3d.io Floor Plan App
+
+!!! WORK IN PROGRESS !!! EXPECT CHANGES !!!
 
 * Converts floor plans into [basic 3d models](https://3d.io/floor-plan-to-3d-conversion.html) using 3d.io APIs.
 * Stores conversion related info in a database.
 * Sends email notification when conversion is done.
 
-# Install
+## Install
 
 1. Deploy app to heroku
 2. Creates accounts for database, email, ngrok:
