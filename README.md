@@ -8,13 +8,13 @@
 
 ## Install
 
-1. **Deploy app to heroku by clicking this button:**
+### 1. **Deploy app to heroku by clicking this button:**
 
 <a href="https://heroku.com/deploy?template=https://github.com/archilogic-com/3dio-floor-plan-app/tree/master">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
-2. **Create accounts for 3d.io, database, email:**
+### 2. **Create accounts for 3d.io, database, email:**
 
 Url | Purpose
 --- | ---
@@ -23,7 +23,7 @@ https://firebase.com | Database
 https://sendgrid.com | Email
 https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io conversion status update callbacks. (optional)
 
-3. **Set environment variables**
+### 3. **Set environment variables**
 
 Name | Example
 --- | ---
@@ -36,6 +36,6 @@ FIREBASE_PRIVATE_KEY | -----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...
 FIREBASE_CLIENT_EMAIL | xyz@your-project-id.iam.gserviceaccount.com
 FIREBASE_DATABASE_URL | https://your-project-id.firebaseio.com
 
-4. **Optional: Modify email messages to your customers in:**
-   * api/convert-floor-plan-to-3d.js
-   * api/on-conversion-status-update.js
+### 4. **Optional: Modify email messages to your customers in:**
+* api/convert-floor-plan-to-3d.js
+* api/on-conversion-status-update.js
