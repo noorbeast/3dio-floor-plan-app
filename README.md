@@ -37,5 +37,5 @@ FIREBASE_CLIENT_EMAIL | xyz@your-project-id.iam.gserviceaccount.com
 FIREBASE_DATABASE_URL | https://your-project-id.firebaseio.com
 
 ### 4. **Optional: Modify email messages to your customers in:**
-* api/convert-floor-plan-to-3d.js
-* api/on-conversion-status-update.js
+* [api/convert-floor-plan-to-3d.js](https://github.com/archilogic-com/3dio-floor-plan-app/blob/master/api/convert-floor-plan-to-3d.js#L86)
+* [api/on-conversion-status-update.js](https://github.com/archilogic-com/3dio-floor-plan-app/blob/master/api/on-conversion-status-update.js#L74)
