@@ -8,7 +8,12 @@
 
 ## Install
 
-1. **Deploy app to heroku**
+1. **Deploy app to heroku by clicking this button:**
+
+<a href="https://heroku.com/deploy?template=https://github.com/archilogic-com/3dio-floor-plan-app/tree/master">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+
 2. **Create accounts for 3d.io, database, email:**
 
 Url | Purpose
