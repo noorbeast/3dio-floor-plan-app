@@ -1,33 +1,25 @@
 const startApiServer = require('instant-api')
-const fireBaseAdmin = require('firebase-admin')
+const firebaseAdmin = require('firebase-admin')
 const io3d = require('3dio')
 const configs = require('./configs.js')
 
-// FIXME: remove this once io3d.floorplan.convert is part of 3dio lib
-require('./3dio-extension.js')
+// FIXME: remove this once floor plan conversion server side endpoints are deployed into production
+io3d.configs({
+  servicesUrl: 'https://testing.archilogic.com/api/v2'
+})
 
-//// init firebase
-//fireBaseAdmin.initializeApp({
-//  credential: admin.credential.cert({
-//    projectId: configs.firebase.projectId,
-//    clientEmail: configs.firebase.clientEmail,
-//    privateKey: configs.firebase.privateKey
-//  }),
-//  databaseURL: configs.firebase.databaseURL
-//  // limit db access
-//  //databaseAuthVariableOverride: {
-//  //  uid: "my-service-worker"
-//  //}
-//})
+// init firebase
+firebaseAdmin.initializeApp({
+  credential: firebaseAdmin.credential.cert(configs.firebase.serviceAccount),
+  databaseURL: configs.firebase.databaseUrl
+})
 
 // init 3dio
-io3d.config({
-  secretApiKey: configs.secretApiKey
-})
+io3d.config({ secretApiKey: configs.secretApiKey })
 
 // start server
 startApiServer({
-  // tasks
+  // methods
   'FloorPlan.convertToBasic3dModel': require('./api/convert-floor-plan-to-3d.js'),
   'FloorPlan.onConversionStatusUpdate': require('./api/on-conversion-status-update.js')
 }, {
