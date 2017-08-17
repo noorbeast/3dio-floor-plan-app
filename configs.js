@@ -6,8 +6,8 @@ module.exports = {
   // note: localhost or 127.0.0.1 will not work with callbacks from 3d.io -> use ngrok for local testing
   url: getServerUrl(),
 
-  // website domains which will be allowed to use this API
-  corsWhiteList: [
+  // website domains which will be allowed to use this API (CORS)
+  corsAllowedDomains: [
     getServerUrl(),
     'localhost'
   ],

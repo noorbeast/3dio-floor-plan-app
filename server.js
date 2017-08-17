@@ -27,5 +27,5 @@ startApiServer({
   port: configs.port,
   apiPath: 'api/v1',
   staticDir: configs.staticDir,
-  corsWhiteList: configs.corsWhiteList
+  corsAllowedDomains: configs.corsAllowedDomains
 })
