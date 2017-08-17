@@ -4,11 +4,11 @@ module.exports = {
 
   // URL of the server where this app is deployed to (relevant for callbacks)
   // note: localhost or 127.0.0.1 will not work with callbacks from 3d.io -> use ngrok for local testing
-  url: getServerUrl(),
+  url: process.env.PUBLIC_SERVER_URL,
 
   // website domains which will be allowed to use this API (CORS)
   corsAllowedDomains: [
-    getServerDomain(),
+    process.env.PUBLIC_SERVER_URL.replace('https://','').replace('http://',''),
     'localhost'
   ],
 
@@ -53,30 +53,4 @@ module.exports = {
     }
   }
 
-}
-
-// helpers
-
-function getServerUrl () {
-  if (process.env.PUBLIC_SERVER_URL) {
-    // use local testing: use ngrok URL
-    return process.env.PUBLIC_SERVER_URL
-  } else if (process.env.HEROKU_APP_NAME) {
-    // production: construct heroku URL
-    return `https://${process.env.HEROKU_APP_NAME}.herokuapp.com`
-  } else {
-    return null
-  }
-}
-
-function getServerDomain () {
-  if (process.env.PUBLIC_SERVER_URL) {
-    // use local testing: use ngrok URL
-    return process.env.PUBLIC_SERVER_URL.replace('https://','').replace('http://','')
-  } else if (process.env.HEROKU_APP_NAME) {
-    // production: construct heroku URL
-    return `${process.env.HEROKU_APP_NAME}.herokuapp.com`
-  } else {
-    return null
-  }
 }
