@@ -12,7 +12,7 @@
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
-### 2. **Create accounts for 3d.io, database, email:**
+### 2. **Setup 3d.io, database and email:**
 
 Url | Purpose | Docs
 --- | --- | ---
