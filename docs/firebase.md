@@ -39,3 +39,5 @@ Go back to firebase console and in project overview, go to "Database", there cop
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-31-37_7brb54/floor-plan-to-3d___Realtime_Database___Firebase_console.jpg)
 
 ### Done :)
+
+Continue to [SendGrid setup](sendgrid.md)
