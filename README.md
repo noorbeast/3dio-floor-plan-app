@@ -16,12 +16,12 @@
 
 ### 2. **Create accounts for 3d.io, database, email:**
 
-Url | Purpose
---- | ---
-https://3d.io | Floor plan conversion service
-https://firebase.com | Database service
-https://sendgrid.com | Email service
-https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io conversion status update callbacks. (optional)
+Url | Purpose | Docs
+--- | --- | ---
+https://3d.io | Floor plan conversion service | docs/3dio.md
+https://firebase.com | Database service | docs/firebase.md
+https://sendgrid.com | Email service | 
+https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io conversion status update callbacks. (optional) | 
 
 ### 3. **Set environment variables**
 
