@@ -15,7 +15,6 @@ firebaseAdmin.initializeApp({
 })
 
 // init 3dio
-console.log('::::', configs.secretApiKey.substring(0,5))
 io3d.config({ secretApiKey: configs.secretApiKey })
 
 // start server
