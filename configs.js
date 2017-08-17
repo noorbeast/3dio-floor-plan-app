@@ -8,7 +8,7 @@ module.exports = {
 
   // website domains which will be allowed to use this API (CORS)
   corsAllowedDomains: [
-    getServerUrl(),
+    getServerUrl().replace('https://','').replace('http://',''),
     'localhost'
   ],
 
