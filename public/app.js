@@ -1,5 +1,5 @@
 // configs
-var apiUrl = 'http://localhost:3000'
+var apiUrl = '/'
 
 // get DOM element references
 var floorPlanEl = document.querySelector('#floor-plan-url')
