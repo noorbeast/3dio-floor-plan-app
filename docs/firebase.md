@@ -16,7 +16,7 @@ Set project name and region:
 
 ### 5. Generate new private key
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_05-58-36_WPI3Q1/floor-plan-to-3d___Settings___Firebase_console.jpg)
-Download JSON file with firebase account information including private key:
+Download JSON file with account information including private key:
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_05-59-48_0IACNM/floor-plan-to-3d___Settings___Firebase_console.jpg)
 
 ### 6. Store your private key as environment variable
