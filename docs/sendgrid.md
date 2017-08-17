@@ -1,4 +1,4 @@
-# SendGrid Setup
+# Setup SendGrid
 
 ### 1. Login or signup at SendGrid (https://app.sendgrid.com/signup)
 At some point during setup a green message at the top will pop up reminding you about veryfying your acount. Just go to your own email box, confirm the message you received from SendGrid and proceed.  

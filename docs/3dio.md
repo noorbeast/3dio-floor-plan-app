@@ -1,4 +1,4 @@
-# 3d.io Setup
+# Setup 3d.io
 
 ### 1. Go to https://3d.io/dev-dashboard
 Sign up or log in
