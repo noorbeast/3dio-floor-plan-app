@@ -12,27 +12,26 @@
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
-### 2. **Setup 3d.io, database and email:**
+### 2. **Setup Services:**
 
-| Docs | Purpose | Url |
-| --- | --- | --- |
-| [Setup 3d.io](docs/3dio.md) | Floor plan conversion service | https://3d.io |
-| [Setup firebase](docs/firebase.md) | Database service | https://firebase.com |
-| [Setup sendGrid](docs/sendgrid.md) | Email service | https://sendgrid.com |
-| | Public tunnel to your localhost for testing (optional) | https://ngrok.com |
+
+* [**3d.io**](docs/3dio.md) - Floor plan conversion service
+* [**firebase**](docs/firebase.md) - Database service
+* [**sendGrid**](docs/sendgrid.md) - Email service
+* [**ngrok.com**](https://ngrok.com) - Public tunnel to your localhost for testing (optional)
 
 ### 3. **Set environment variables**
 
-Name | Example | Notes
---- | --- | ---
-PUBLIC_SERVER_URL | `https://your-server-url.com` | The URL where your server is publicly accessible. To obtain a public URL for local development use https://ngrok.com
-EMAIL_FROM | `floor-plan@your-domain.com` | Emails to your customers will have this email address in the "from" field 
-EMAIL_ADMIN | `admin@your-domain.com` | Email of the administrator responsible for this server. Error notifications will be send here.
-3DIO_SECRET_API_KEY | `51ebcf63-d5d...` | Docs: [Setup 3d.io](docs/3dio.md)
-SENDGRID_API_KEY | `SG.wBcemOAdRZ-yC-Zwz1ZhPw.uw5h5VhS...` | Docs: [Setup sendGrid](docs/sendgrid.md)
-FIREBASE_PRIVATE_KEY | `-----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...` | Docs: [Setup firebase](docs/firebase.md)
-FIREBASE_CLIENT_EMAIL | `xyz@your-project-id.iam.gserviceaccount.com` | Docs: [Setup firebase](docs/firebase.md)
-FIREBASE_DATABASE_URL | `https://your-project-id.firebaseio.com` | Docs: [Setup firebase](docs/firebase.md)
+Name | Purpose
+--- | ---
+PUBLIC_SERVER_URL | The URL where your server is publicly accessible. To obtain a public URL for local development use https://ngrok.com<br>Example: `https://your-server-url.com`
+EMAIL_FROM | Emails to your customers will have this email address in the "from" field<br>Example: `floor-plan@your-domain.com`
+EMAIL_ADMIN | Email of the administrator responsible for this server. Error notifications will be send here.<br>Example: `admin@your-domain.com`
+3DIO_SECRET_API_KEY | Docs: [Setup 3d.io](docs/3dio.md)<br>Example: `51ebcf63-d5d...`
+SENDGRID_API_KEY | Docs: [Setup sendGrid](docs/sendgrid.md)<br>Example: `SG.wBcemOAdRZ-yC-Zwz1ZhPw.uw5h5VhS...`
+FIREBASE_PRIVATE_KEY | Docs: [Setup firebase](docs/firebase.md)<br>Example: `-----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...`
+FIREBASE_CLIENT_EMAIL | Docs: [Setup firebase](docs/firebase.md)<br>Example: `xyz@your-project-id.iam.gserviceaccount.com`
+FIREBASE_DATABASE_URL | Docs: [Setup firebase](docs/firebase.md)<br>Example: `https://your-project-id.firebaseio.com`
 
 ### 4. **Optional: Modify email messages to your customers in:**
 * [api/convert-floor-plan-to-3d.js](https://github.com/archilogic-com/3dio-floor-plan-app/blob/master/api/convert-floor-plan-to-3d.js#L86)
