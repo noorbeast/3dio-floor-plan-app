@@ -8,7 +8,7 @@ module.exports = {
 
   // website domains which will be allowed to use this API (CORS)
   corsAllowedDomains: [
-    getServerUrl().replace('https://','').replace('http://',''),
+    getServerDomain(),
     'localhost'
   ],
 
@@ -53,17 +53,25 @@ module.exports = {
 // helpers
 
 function getServerUrl () {
-
   if (process.env.PUBLIC_SERVER_URL) {
     // use local testing: use ngrok URL
     return process.env.PUBLIC_SERVER_URL
-
   } else if (process.env.HEROKU_APP_NAME) {
     // production: construct heroku URL
     return `https://${process.env.HEROKU_APP_NAME}.herokuapp.com`
-
   } else {
     return null
+  }
+}
 
+function getServerDomain () {
+  if (process.env.PUBLIC_SERVER_URL) {
+    // use local testing: use ngrok URL
+    return process.env.PUBLIC_SERVER_URL.replace('https://','').replace('http://','')
+  } else if (process.env.HEROKU_APP_NAME) {
+    // production: construct heroku URL
+    return `${process.env.HEROKU_APP_NAME}.herokuapp.com`
+  } else {
+    return null
   }
 }
