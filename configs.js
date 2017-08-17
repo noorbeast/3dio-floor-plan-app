@@ -32,7 +32,7 @@ module.exports = {
   // feel free to replace this with configs specific to your database layer of choise
   firebase: {
     serviceAccount: {
-      private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'), // important: replacing '\\n' with '\n' ensures that key will be parsed correctly
       client_email: process.env.FIREBASE_CLIENT_EMAIL,
     },
     databaseUrl: process.env.FIREBASE_DATABASE_URL
