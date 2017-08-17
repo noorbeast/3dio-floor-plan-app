@@ -4,7 +4,7 @@
 
 * Converts floor plans into [basic 3d models](https://3d.io/floor-plan-to-3d-conversion.html) using 3d.io APIs.
 * Stores conversion related info in your database.
-* Sends email notification to your csutomers once conversion is done.
+* Sends email notification to your cutomer when 3d model is ready.
 
 ## Install
 
