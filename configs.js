@@ -26,7 +26,7 @@ module.exports = {
   // SERVICES
 
   // get your 3d.io secret API key from: https://3d.io/dev-dashboard/
-  secretApiKey: process.env['3DIO_SECRET_API_KEY'],
+  secretApiKey: process.env.IO3D_SECRET_API_KEY,
 
   // database (using firebase API)
   // feel free to replace this with configs specific to your database layer of choise
