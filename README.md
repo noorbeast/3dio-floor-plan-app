@@ -14,18 +14,18 @@
 
 ### 2. **Setup 3d.io, database and email:**
 
-Url | Purpose | Docs
---- | --- | ---
-https://3d.io | Floor plan conversion service | [Setup 3d.io](docs/3dio.md)
-https://firebase.com | Database service | [Setup firebase](docs/firebase.md)
-https://sendgrid.com | Email service | [Setup sendGrid](docs/sendgrid.md)
-https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io conversion status update callbacks. (optional) | 
+| Docs | Purpose | Url |
+| --- | --- | --- |
+| [Setup 3d.io](docs/3dio.md) | Floor plan conversion service | https://3d.io |
+| [Setup firebase](docs/firebase.md) | Database service | https://firebase.com |
+| [Setup sendGrid](docs/sendgrid.md) | Email service | https://sendgrid.com |
+| | Public tunnel to your localhost for testing (optional) | https://ngrok.com |
 
 ### 3. **Set environment variables**
 
 Name | Example | Notes
 --- | --- | ---
-PUBLIC_SERVER_URL | `https://your-server-url.com` | The URL where your server is publicly accesslibe. To obtain a public URL for local testing use https://ngrok.com
+PUBLIC_SERVER_URL | `https://your-server-url.com` | The URL where your server is publicly accessible. To obtain a public URL for local testing use https://ngrok.com
 EMAIL_FROM | `floor-plan@your-domain.com` | Emails to your customers will have this email address in the "from" field 
 EMAIL_ADMIN | `admin@your-domain.com` | Email of the administrator responsible for this server. Error notifications will be send here.
 3DIO_SECRET_API_KEY | `51ebcf63-d5d...` | Howto: [Setup 3d.io](docs/3dio.md)
