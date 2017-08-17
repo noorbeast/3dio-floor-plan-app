@@ -27,11 +27,11 @@ Name | Notes
 **PUBLIC_SERVER_URL** | The URL where your server is publicly accessible. To obtain a public URL for local development use https://ngrok.com<br>Example: `https://your-server-url.com`
 **EMAIL_FROM** | Emails to your customers will have this email address in the "from" field<br>Example: `floor-plan@your-domain.com`
 **EMAIL_ADMIN** | Email of the administrator responsible for this server. Error notifications will be send here.<br>Example: `admin@your-domain.com`
-**3DIO_SECRET_API_KEY** | Docs: [Setup 3d.io](docs/3dio.md)<br>Example: `51ebcf63-d5d...`
-**SENDGRID_API_KEY** | Docs: [Setup sendGrid](docs/sendgrid.md)<br>Example: `SG.wBcemOAdRZ-yC-Zwz1ZhPw.uw5h5VhS...`
-**FIREBASE_PRIVATE_KEY** | Docs: [Setup firebase](docs/firebase.md)<br>Example: `-----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...`
-**FIREBASE_CLIENT_EMAIL** | Docs: [Setup firebase](docs/firebase.md)<br>Example: `xyz@your-project-id.iam.gserviceaccount.com`
-**FIREBASE_DATABASE_URL** | Docs: [Setup firebase](docs/firebase.md)<br>Example: `https://your-project-id.firebaseio.com`
+**3DIO_SECRET_API_KEY** | [Setup 3d.io](docs/3dio.md), Example: `51ebcf63-d5d...`
+**SENDGRID_API_KEY** | [Setup sendGrid](docs/sendgrid.md), Example: `SG.wBcemOAdRZ-yC-ZwzVhS...`
+**FIREBASE_PRIVATE_KEY** | [Setup firebase](docs/firebase.md), Example: `-----BEGIN PRIVATE KEY-----\nMIIIBADA...`
+**FIREBASE_CLIENT_EMAIL** | [Setup firebase](docs/firebase.md), Example: `xyz@project-id.iam.gserviceaccount.com`
+**FIREBASE_DATABASE_URL** | [Setup firebase](docs/firebase.md), Example: `https://your-project-id.firebaseio.com`
 
 ### 4. **Optional: Modify email messages to your customers in:**
 * [api/convert-floor-plan-to-3d.js](https://github.com/archilogic-com/3dio-floor-plan-app/blob/master/api/convert-floor-plan-to-3d.js#L86)
