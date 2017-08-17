@@ -23,16 +23,16 @@ https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io c
 
 ### 3. **Set environment variables**
 
-Name | Example
---- | ---
-PUBLIC_SERVER_URL | `https://your-server-url.com`
-EMAIL_FROM | `floor-plan@your-domain.com`
-EMAIL_ADMIN | `admin@your-domain.com`
-3DIO_SECRET_API_KEY | `51ebcf63-d5d...`
-SENDGRID_API_KEY | `SG.wBcemOAdRZ-yC-Zwz1ZhPw.uw5h5VhS...`
-FIREBASE_PRIVATE_KEY | `-----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...`
-FIREBASE_CLIENT_EMAIL | `xyz@your-project-id.iam.gserviceaccount.com`
-FIREBASE_DATABASE_URL | `https://your-project-id.firebaseio.com`
+Name | Example | Notes
+--- | --- | ---
+PUBLIC_SERVER_URL | `https://your-server-url.com` | The URL where your server is publicly accesslibe. To obtain a public URL for local testing use https://ngrok.com
+EMAIL_FROM | `floor-plan@your-domain.com` | Emails to your customers will have this email address in the "from" field 
+EMAIL_ADMIN | `admin@your-domain.com` | Email of the administrator responsible for this server. Error notifications will be send here.
+3DIO_SECRET_API_KEY | `51ebcf63-d5d...` | Howto: [Setup 3d.io](docs/3dio.md)
+SENDGRID_API_KEY | `SG.wBcemOAdRZ-yC-Zwz1ZhPw.uw5h5VhS...` | Howto: [Setup sendGrid](docs/sendgrid.md)
+FIREBASE_PRIVATE_KEY | `-----BEGIN PRIVATE KEY-----\nMIIEvAIBADA...` | Howto: [Setup firebase](docs/firebase.md)
+FIREBASE_CLIENT_EMAIL | `xyz@your-project-id.iam.gserviceaccount.com` | Howto: [Setup firebase](docs/firebase.md)
+FIREBASE_DATABASE_URL | `https://your-project-id.firebaseio.com` | Howto: [Setup firebase](docs/firebase.md)
 
 ### 4. **Optional: Modify email messages to your customers in:**
 * [api/convert-floor-plan-to-3d.js](https://github.com/archilogic-com/3dio-floor-plan-app/blob/master/api/convert-floor-plan-to-3d.js#L86)
