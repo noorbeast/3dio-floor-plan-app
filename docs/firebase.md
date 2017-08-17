@@ -22,7 +22,7 @@ Download JSON file with account information including private key:
 ### 6. Store your private key as environment variable
 Open the downloaded file and copy the value named "private_key"
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-08-05_rlz88B/floor-plan-to-3d-firebase-adminsdk-d49ah-b329442a5e_json.jpg)
-Store it as environment varialbe:
+Store it as environment variable:
 * For local development:
   * Windows: `set FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBAASCBKcwggSjA..."`
   * OSX: `export FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBAASCBKcwggSjA..."`
