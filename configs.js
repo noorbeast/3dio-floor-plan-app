@@ -34,7 +34,11 @@ module.exports = {
     serviceAccount: {
       private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'), // important: replacing '\\n' with '\n' ensures that key will be parsed correctly
       client_email: process.env.FIREBASE_CLIENT_EMAIL,
-      token_uri: "https://accounts.google.com/o/oauth2/token"
+      client_id: process.env.FIREBASE_CLIENT_ID,,
+      auth_uri: "https://accounts.google.com/o/oauth2/auth",
+      token_uri: "https://accounts.google.com/o/oauth2/token",
+      auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+      client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-dyyns%40io3d-floor-plan-app.iam.gserviceaccount.com"
     },
     databaseUrl: process.env.FIREBASE_DATABASE_URL
   },
