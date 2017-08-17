@@ -29,6 +29,9 @@ module.exports = function onConversionStatusUpdate (rpc) {
   }).then(conversionData => {
     // send out notifications etc.
     return handleStatusUpdate(rpc, conversionData)
+  }).then(() => {
+    rpc.end('') // for JSON-RPC2 notifications
+    // rpc.sendResult('') // for JSON-RPC2 requests
   })
 
 }
