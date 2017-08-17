@@ -10,7 +10,7 @@ Reveal your secret API key
 Copy secret API key
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_07-36-09_Zt6FSm/https___3d_io_dev-dashboard_.jpg)
 
-### 3. Store your secret key as environment variable
+### 3. Store your secret key as environment variables
 * For local development:
   * Windows: `set 3DIO_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
   * OSX / Linux: `export 3DIO_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
