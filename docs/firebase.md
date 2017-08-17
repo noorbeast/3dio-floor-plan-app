@@ -1,4 +1,4 @@
-# Firebase Setup
+# Setup Firebase
 
 ### 1. Go to https://console.firebase.google.com
 Log in or sign up with your google account
