@@ -19,7 +19,7 @@ Set project name and region:
 Download JSON file with account information including private key:
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_05-59-48_0IACNM/floor-plan-to-3d___Settings___Firebase_console.jpg)
 
-### 6. Store your private key as environment variable
+### 6. Store your private key as environment variables
 Open the downloaded file and copy the value named "private_key"
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-08-05_rlz88B/floor-plan-to-3d-firebase-adminsdk-d49ah-b329442a5e_json.jpg)
 Store it as environment variable:
