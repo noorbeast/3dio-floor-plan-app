@@ -35,7 +35,7 @@ Repeat step 6 for the value named "client_email" and store it as "FIREBASE_CLIEN
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-28-18_heqpEJ/floor-plan-to-3d-firebase-adminsdk-d49ah-b329442a5e_json.jpg)
 
 ### 8. Store your database url as environment variable
-Go back to firebase console and in project overview, go to "Database", there copy the database url (2) and store it as environment variable "FIREBASE_DATABASE_URL" (as described in step 6).
+Go back to firebase console and in project overview, go to "Database", there copy the database url (2) and store it as environment variable named "FIREBASE_DATABASE_URL" (as described in step 6).
 ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-31-37_7brb54/floor-plan-to-3d___Realtime_Database___Firebase_console.jpg)
 
 ### Done :)
