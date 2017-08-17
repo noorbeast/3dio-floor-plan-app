@@ -1,21 +1,31 @@
 // configs
-
 var apiUrl = 'http://localhost:3000'
 
-// init
-
+// get DOM element references
 var floorPlanEl = document.querySelector('#floor-plan-url')
 var addressEl = document.querySelector('#address')
 var emailEl = document.querySelector('#email')
 var buttonEl = document.querySelector('#convert-button')
+var apiInfoEl = document.querySelector('#api-info')
 
+// create file drop box
+io3d.utils.ui.fileDrop({
+  elementId: 'file-drop-box',
+  upload: true,
+  dragOverCssClass: 'file-drop-box-dragover',
+  onInput: function (files) {
+    floorPlanEl.value = files[0].url
+  }
+})
 
+// add event listener to click button
 buttonEl.addEventListener('click', function(){
-
+  // start API request
+  apiInfoEl.innerHTML = 'Sending API request...<br>'
   convertFloorPlanTo3d(floorPlanEl.value, addressEl.value, emailEl.value).then(function onSuccess(res) {
-    console.log('Sending request success. conversionId = ', res.result.conversionId)
+    apiInfoEl.innerHTML += 'Sending request success. conversionId: ' + res.result.conversionId + '<br>'
   }).catch(function onError(error) {
-    console.log('Sending request failed:', error)
+    apiInfoEl.innerHTML += 'Sending request failed:' + JSON.stringify(error, null, 2)
   })
 })
 
@@ -40,6 +50,7 @@ function convertFloorPlanTo3d (floorPlanUrl, address, email) {
     body: JSON.stringify( jsonRpc2Message )
   }).then(function(response){
     if (!response.ok) {
+      // try to parse response anyway. it might contain a valid JSON error message
       return response.json().then(function onBodyParsed(body){
         return Promise.reject(body)
       })
