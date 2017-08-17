@@ -1,7 +1,5 @@
 # 3d.io Floor Plan App
 
-!!! WORK IN PROGRESS !!! EXPECT CHANGES !!!
-
 * Converts floor plans into [basic 3d models](https://3d.io/floor-plan-to-3d-conversion.html) using 3d.io APIs.
 * Stores conversion related info in your database.
 * Sends email notification to your cutomer when 3d model is ready.
@@ -14,13 +12,13 @@
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
-### 2. **Create accounts for 3d.io, database, email:**
+### 2. **Setup 3d.io, database and email:**
 
 Url | Purpose | Docs
 --- | --- | ---
-https://3d.io | Floor plan conversion service | [docs/3dio.md]
-https://firebase.com | Database service | [docs/firebase.md]
-https://sendgrid.com | Email service | 
+https://3d.io | Floor plan conversion service | [Setup 3d.io](docs/3dio.md)
+https://firebase.com | Database service | [Setup firebase](docs/firebase.md)
+https://sendgrid.com | Email service | [Setup sendGrid](docs/sendgrid.md)
 https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io conversion status update callbacks. (optional) | 
 
 ### 3. **Set environment variables**
