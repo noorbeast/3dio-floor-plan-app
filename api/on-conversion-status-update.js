@@ -17,7 +17,7 @@ module.exports = function onConversionStatusUpdate (rpc) {
   // params from 3d.io API callback
   const conversionId = rpc.params.conversionId
 
-  console.log(`API request FloorPlan.onConversionStatusUpdate accepted. params:`, rpc.params)
+  console.log(`Accepted API request "FloorPlan.onConversionStatusUpdate" with params:`, rpc.params)
 
   // get conversion status
   getConversionStatusFrom3dio(rpc, conversionId).then(statusData => {
@@ -32,6 +32,8 @@ module.exports = function onConversionStatusUpdate (rpc) {
   }).then(() => {
     rpc.end('') // for JSON-RPC2 notifications
     // rpc.sendResult('') // for JSON-RPC2 requests
+  }).catch(error => {
+    rpc.sendError(error)
   })
 
 }

@@ -22,9 +22,9 @@ module.exports = function convertFloorPlanTo3d (rpc) {
 
   // validate params
   if (!isEmail(email)) return rpc.sendParamsError('Please provide a valid email.')
-  if (!floorPlan || floorPlan === '') return rpc.sendParamsError('Please provide floorPlan param.')
+  if (!floorPlan || floorPlan === '') return rpc.sendParamsError('Missing floorPlan param.')
 
-  console.log(`API request FloorPlan.convertFloorPlanTo3d accepted. params:`, rpc.params)
+  console.log(`Accepted API request "FloorPlan.convertFloorPlanTo3d accepted" with params:`, rpc.params)
 
   // internals
   // this will be stored in database referenced by converionId which we will obtain from 3dio
@@ -48,9 +48,9 @@ module.exports = function convertFloorPlanTo3d (rpc) {
       console.log(`Floor plan conversion in progress. conversionId: ${conversionId}`)
       // close API call
       rpc.sendResult({conversionId: conversionId})
-    }, error => {
-      rpc.sendError(error)
     })
+  }).catch(error => {
+    rpc.sendError(error)
   })
 
 }
@@ -87,7 +87,7 @@ function sendEmailToCustomer (rpc, conversionId, conversionData) {
     text: `Your conversionId is: ${conversionId}`,
     html: `Your conversionId is: ${conversionId}`
   }).then(result => {
-    console.log(`Sent email to customer that floor plan is being processed`)
+    console.log(`Sent email to customer informing him that floor plan is being processed`)
     return result
   }).catch(error => {
     return handleError('Error sending email.', error, rpc)
