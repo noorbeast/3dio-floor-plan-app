@@ -12,7 +12,7 @@
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
-### 2. **Setup Services:**
+### 2. **Setup services:**
 
 
 * [**3d.io**](docs/3dio.md) - Floor plan conversion service
