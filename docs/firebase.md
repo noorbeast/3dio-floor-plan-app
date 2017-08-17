@@ -25,7 +25,7 @@ Open the downloaded file and copy the value named "private_key"
 Store it as environment variable:
 * For local development:
   * Windows: `set FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBAASCBKcwggSjA..."`
-  * OSX: `export FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBAASCBKcwggSjA..."`
+  * OSX / Linux: `export FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBAASCBKcwggSjA..."`
 * On your heroku deployment:
   ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-18-14_2RPkfX/floor-plan-to-3d___Settings___Heroku_and_repositories.jpg)
   ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-20-28_gEuBQl/floor-plan-to-3d___Settings___Heroku_and_floor-plan-to-3d-firebase-adminsdk-d49ah-b329442a5e_json.jpg)
