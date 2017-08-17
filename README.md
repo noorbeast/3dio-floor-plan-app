@@ -16,9 +16,9 @@
 
 Url | Purpose | Docs
 --- | --- | ---
-https://3d.io | Floor plan conversion service | [Setup 3d.io configs](docs/3dio.md)
+https://3d.io | Floor plan conversion service | [Setup 3d.io](docs/3dio.md)
 https://firebase.com | Database service | [Setup firebase](docs/firebase.md)
-https://sendgrid.com | Email service | 
+https://sendgrid.com | Email service | [Setup sendGrid](docs/sendgrid.md)
 https://ngrok.com | Public tunnel to your localhost for local testing of 3d.io conversion status update callbacks. (optional) | 
 
 ### 3. **Set environment variables**
