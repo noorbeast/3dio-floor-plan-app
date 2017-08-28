@@ -5,7 +5,7 @@ var apiUrl = '/'
 var floorPlanEl = document.querySelector('#floor-plan-url')
 var addressEl = document.querySelector('#address')
 var emailEl = document.querySelector('#email')
-var buttonEl = document.querySelector('#convert-button')
+var buttonEl = document.querySelector('.convert-button')
 var apiInfoEl = document.querySelector('#api-info')
 
 // create file drop box
