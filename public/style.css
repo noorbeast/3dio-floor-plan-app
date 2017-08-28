@@ -1,14 +1,19 @@
 body {
-  font-family: 'Fira Sans', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .hidden {
   display: none;
+}
+input {
+  background: transparent;
 }
 .order-container {
     width: 850px;
     max-width: 100%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     height: 470px;
     display: block;
     padding: 40px 50px;
@@ -23,28 +28,18 @@ body {
     font-size: 90%;
     line-height: 1.5em;
     transform-origin: center;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease
 }
-@media all and (max-width: 767px) {
-    .order-container {
-        margin-top: 100px;
-        height: 600px;
-        padding: 40px 20px
-    }
-}
-@media all and (max-width: 549px) and (max-height: 700px) {
+@media all and (max-width: 767px)  {
     .order-container {
         margin-top: 0;
-        height: 100vh
+        height: 100vh;
+        box-shadow: none;
     }
 }
 .order-container h2 {
     font-weight: 300;
     line-height: 1.2;
-    font-size: 26px;
+    font-size: 22px;
     letter-spacing: 1px;
     width: 550px;
     margin: 0 auto 30px;

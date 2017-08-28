@@ -1,6 +1,7 @@
 TODO
 ===
 
+- add image preview to upload field
 - decide on using jQuery or against it, change JS accordingly
 - merge js parts in a style-guide-compliant way
 - localization
