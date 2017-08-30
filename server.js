@@ -3,11 +3,6 @@ const firebaseAdmin = require('firebase-admin')
 const io3d = require('3dio')
 const configs = require('./configs.js')
 
-// FIXME: remove this once floor plan conversion server side endpoints are deployed into production
-io3d.configs({
-  servicesUrl: 'https://testing.archilogic.com/api/v2'
-})
-
 // init firebase
 firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.cert(configs.firebase.serviceAccount),
