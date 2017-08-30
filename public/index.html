@@ -12,26 +12,26 @@
   <script src="https://dist.3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
 </head>
 <body>
-  <main class='order-container'>
+  <form class='order-container'>
     <ul class="order-navigator"></ul>
     <div class="order-content" data-page='0'>
       <h2>Wir konvertieren Deinen Grundriss automatisch in ein interaktives 3D model. Kostenfrei!</h2>
       <div class="order-info">
         <div  id="file-drop-box" class="order-info-upload">
           <div class="content-dropzone free-order" title="Free 3D model floor plan upload" file-keys="">
-            <label class="dropzone-area"><!----> 
+            <label class="dropzone-area"><!---->
               <div class="dropzone-text">
                 <span class="dropzone-info">
                   <img width="60px" src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-upload-floorplan.svg">
                   <br>Grundriss hier hineinziehen<br>oder klicken zum hochladen
                 </span>
-              </div> 
+              </div>
               <input type="file">
-            </label>  
+            </label>
           </div> <!---->
         </div>
         <div class="order-info-center hide-mobile">
-          <div class="order-info-arrow"> in 48 Stunden 
+          <div class="order-info-arrow"> in 48 Stunden
             <div class="order-info-arrow-head"></div>
           </div>
           <div>bekommst Du den Link zum 3D Modell</div>
@@ -40,25 +40,25 @@
       </div>
       <div class="order-btn-wrapper">
         <div class="order-field">
-          <input id="floor-plan-url" required="required" class="order-input">
+          <input name='floor-plan=url' id="floor-plan-url" type='text' required="required" class="order-input">
           <label for="address" class="order-label">Alternativ die URL eines Photos angeben</label>
-        </div> 
-        <button class="order-btn" data-page='1'>
+        </div>
+        <button type="submit" class="order-btn" data-page='1'>
           <span>Bestätigen</span>
         </button>
       </div>
     </div>
     <div class="order-content" data-page='1'>
-      <h2>Bitte gib uns Deine Email damit wir Dich benachrichtigen können wenn das Modell fertig ist</h2> 
+      <h2>Bitte gib uns Deine Email damit wir Dich benachrichtigen können wenn das Modell fertig ist</h2>
       <div class="order-info hide-mobile" style="justify-content: space-around;">
-        <img src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-send-mail.svg" class="" width="350px"></div> 
+        <img src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-send-mail.svg" class="" width="350px"></div>
         <div class="order-btn-wrapper">
           <div class="order-btn-group">
             <div style="" class="order-field"><!---->
-              <input id="email" required="required" class="order-input popup-order-input-invalid" style="width: 100%;"> 
+              <input id="email" required="required" class="order-input popup-order-input-invalid" style="width: 100%;">
               <label for="address" class="order-label">Email</label>
             </div>
-            <button class="order-btn" data-page='2'>
+            <button type="submit"  class="order-btn" data-page='2'>
               <span>Email verwenden</span>
             </button>
           </div>
@@ -75,16 +75,16 @@
             <div class="order-text address">
             Wenn Du die Adresse des Grundrisses kennst können wir die Lichtverhältnisse genau darstellen. Deine Informationen bleiben privat.
             </div>
-            <div class="order-field address"><!----> 
+            <div class="order-field address"><!---->
               <input id="address" placeholder="Adresse des Grundrisses" class="order-input" autocomplete="off">
             </div>
           </div>
-        </div> 
+        </div>
         <div class="order-btn-wrapper"><!---->
-        <button class="convert-button order-btn white" data-page='3' data-required='false'>
+        <button type="button" class="convert-button order-btn white" data-page='3' data-required='false'>
           <span>Nein danke</span> <!---->
         </button>
-        <button class="convert-button order-btn" data-page='3' data-required='false'>
+        <button type="button" class="convert-button order-btn" data-page='3' data-required='false'>
           <span>Diese Adresse verwenden</span> <!---->
         </button>
       </div>
@@ -96,10 +96,10 @@
         <div id="api-info" class="order-text center"></div>
       </div> <!---->
       <div class="order-btn-wrapper">
-        <button data-page='-1' data-required='false' class="order-btn close-btn">Schliessen</button>
+        <button type='submit' data-page='-1' class="order-btn close-btn">Schliessen</input>
       </div>
     <div id="api-info"></div>
-  </main>
+  </form>
 
   <div id="api-info"></div>
   <script src="js/jquery.min.js"></script>
