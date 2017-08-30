@@ -13,97 +13,65 @@
 </head>
 <body>
   <form class='order-container'>
-    <ul class="order-navigator"></ul>
-    <div class="order-content" data-page='0'>
-      <h2>Wir konvertieren Deinen Grundriss automatisch in ein interaktives 3D model. Kostenfrei!</h2>
-      <div class="order-info">
+
+      <div class='row'>
+        <h2>Convert your floor plan into an interactive 3D model for free!</h2>
         <div  id="file-drop-box" class="order-info-upload">
           <div class="content-dropzone free-order" title="Free 3D model floor plan upload" file-keys="">
             <label class="dropzone-area"><!---->
               <div class="dropzone-text">
                 <span class="dropzone-info">
                   <img width="60px" src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-upload-floorplan.svg">
-                  <br>Grundriss hier hineinziehen<br>oder klicken zum hochladen
+                  Upload Floor Plan
                 </span>
               </div>
               <input type="file">
             </label>
           </div> <!---->
         </div>
-        <div class="order-info-center hide-mobile">
-          <div class="order-info-arrow"> in 48 Stunden
-            <div class="order-info-arrow-head"></div>
-          </div>
-          <div>bekommst Du den Link zum 3D Modell</div>
-        </div>
-        <img src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/explore/popup-order-preview-basic.png" class="order-info-3d-img hide-mobile">
-      </div>
-      <div class="order-btn-wrapper">
         <div class="order-field">
           <input name='floor-plan=url' id="floor-plan-url" type='text' required="required" class="order-input">
-          <label for="address" class="order-label">Alternativ die URL eines Photos angeben</label>
+          <label for="address" class="order-label"> ... or enter image URL here</label>
         </div>
-        <button type="submit" class="order-btn" data-page='1'>
-          <span>Bestätigen</span>
-        </button>
       </div>
-    </div>
-    <div class="order-content" data-page='1'>
-      <h2>Bitte gib uns Deine Email damit wir Dich benachrichtigen können wenn das Modell fertig ist</h2>
-      <div class="order-info hide-mobile" style="justify-content: space-around;">
-        <img src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-send-mail.svg" class="" width="350px"></div>
-        <div class="order-btn-wrapper">
-          <div class="order-btn-group">
-            <div style="" class="order-field"><!---->
-              <input id="email" required="required" class="order-input popup-order-input-invalid" style="width: 100%;">
-              <label for="address" class="order-label">Email</label>
-            </div>
-            <button type="submit"  class="order-btn" data-page='2'>
-              <span>Email verwenden</span>
-            </button>
-          </div>
+      <div class='row'>
+        <div class="order-text address">
+Conversion might take a while, please enter an email-address so we can notify you when we are done         </div>
+        <div style="" class="order-field"><!---->
+          <input id="email" required="required" class="order-input popup-order-input-invalid" style="width: 100%;">
+          <label for="address" class="order-label">Email</label>
         </div>
-    </div>
+      </div>
 
-    <!--<div id="file-drop-box">Drag and drop files here<br>or click to select.</div>-->
-    <div class="order-content" data-page='2'>
-      <h2>Toll! Eine letzte Sache.</h2>
-      <div class="order-info" style="">
-        <div class="order-info-address-img">
-          <img width="100%" src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-set-address.svg"></div>
-          <div class="order-address">
+
+
+      <div class='row'>
             <div class="order-text address">
-            Wenn Du die Adresse des Grundrisses kennst können wir die Lichtverhältnisse genau darstellen. Deine Informationen bleiben privat.
+              Optional: Add location name for lighting settings
             </div>
-            <div class="order-field address"><!---->
-              <input id="address" placeholder="Adresse des Grundrisses" class="order-input" autocomplete="off">
-            </div>
+            <div class="order-field address">
+              <input id="address" placeholder="e.g. Springfield" class="order-input" autocomplete="off">
           </div>
-        </div>
-        <div class="order-btn-wrapper"><!---->
-        <button type="button" class="convert-button order-btn white" data-page='3' data-required='false'>
-          <span>Nein danke</span> <!---->
-        </button>
-        <button type="button" class="convert-button order-btn" data-page='3' data-required='false'>
-          <span>Diese Adresse verwenden</span> <!---->
-        </button>
-      </div>
+
     </div>
 
-    <div class="order-content" data-page='3'>
-      <h2>Vielen Dank für Deinen Grundriss!</h2>
-      <div class="order-info" style="">
-        <div id="api-info" class="order-text center"></div>
-      </div> <!---->
-      <div class="order-btn-wrapper">
-        <button type='submit' data-page='-1' class="order-btn close-btn">Schliessen</input>
-      </div>
-    <div id="api-info"></div>
+  <div class='row'>
+    <button type="button" class="convert-button order-btn" data-page='3' data-required='false'>
+      <span>Convert</span> <!---->
+    </button>
+  </div>
+
+  <div class="hidden order-sent">
+    <h2>Thanks for your order!</h2>
+    <div id="api-info" class="order-text center"></div>
+    <div class="order-btn-wrapper">
+    <button type='submit' data-page='-1' class="order-btn close-btn">Schliessen</input>
+    </div>
+  </div>
+
   </form>
 
   <div id="api-info"></div>
-  <script src="js/jquery.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/assistant.js"></script>
 </body>
 </html>
