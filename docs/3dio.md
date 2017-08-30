@@ -12,8 +12,8 @@ Copy secret API key
 
 ### 3. Store your secret key as environment variables
 * For local development:
-  * Windows: `set 3DIO_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
-  * OSX / Linux: `export 3DIO_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
+  * Windows: `set IO3D_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
+  * OSX / Linux: `export IO3D_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
 * On your heroku deployment:
  ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-18-14_2RPkfX/floor-plan-to-3d___Settings___Heroku_and_repositories.jpg)
  ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_07-42-42_Yk2zoD/floor-plan-to-3d___Settings___Heroku.jpg)
