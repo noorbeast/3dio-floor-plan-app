@@ -27,7 +27,7 @@ Name | Notes
 **PUBLIC_SERVER_URL** | The URL where your server is publicly accessible. To obtain a public URL for local development use [ngrok.com](https://ngrok.com).<br>Example: `https://my-project.herokuapp.com/`
 **EMAIL_FROM** | Emails to your customers will have this email address in the "from" field.<br>Example: `floor-plan@your-domain.com`
 **EMAIL_ADMIN** | Email of the administrator responsible for this server. Error notifications will be send here.<br>Example: `admin@your-domain.com`
-**3DIO_SECRET_API_KEY** | Example: `51ebcf63-d5d...`
+**IO3D_SECRET_API_KEY** | Example: `51ebcf63-d5d...`
 **SENDGRID_API_KEY** | Example: `SG.wBcemOAdRZ-yC-ZwzVhS...`
 **FIREBASE_PRIVATE_KEY** | Example: `-----BEGIN PRIVATE KEY-----\nMIIIBADA...`
 **FIREBASE_CLIENT_EMAIL** | Example: `xyz@project-id.iam.gserviceaccount.com`
