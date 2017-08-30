@@ -5,7 +5,7 @@ const configs = require('./configs.js')
 
 // FIXME: remove this once floor plan conversion server side endpoints are deployed into production
 io3d.configs({
-  servicesUrl: 'https://testing.archilogic.com/api/v2'
+  servicesUrl: 'https://spaces.archilogic.com/api/v2'
 })
 
 // init firebase
