@@ -5,8 +5,9 @@ var apiUrl = '/'
 var floorPlanEl = document.querySelector('#floor-plan-url')
 var addressEl = document.querySelector('#address')
 var emailEl = document.querySelector('#email')
-var buttonEl = document.querySelector('#convert-button')
+var buttonEl = document.querySelector('.convert-button')
 var apiInfoEl = document.querySelector('#api-info')
+var buttonClear = document.querySelector('#btn-clear')
 
 // create file drop box
 io3d.utils.ui.fileDrop({
@@ -18,19 +19,28 @@ io3d.utils.ui.fileDrop({
   }
 })
 
+buttonClear.addEventListener('click', function(){
+  emailEl.value='';
+  addressEl.value='';
+  floorPlanEl.value='';
+});
+
 // add event listener to click button
-buttonEl.addEventListener('click', function(){
+function submitHandler() {
   // start API request
   apiInfoEl.innerHTML = 'Sending API request...<br>'
   convertFloorPlanTo3d(floorPlanEl.value, addressEl.value, emailEl.value).then(function onSuccess(res) {
     apiInfoEl.innerHTML += 'Sending request success. conversionId: ' + res.result.conversionId + '<br>'
   }).catch(function onError(error) {
     apiInfoEl.innerHTML += 'Sending request failed:' + JSON.stringify(error, null, 2)
+    apiInfoEl.innerHTML += '<br>Check your email for details'
   })
-})
+
+  return false;
+}
+
 
 // methods
-
 function convertFloorPlanTo3d (floorPlanUrl, address, email) {
 
   // JSON

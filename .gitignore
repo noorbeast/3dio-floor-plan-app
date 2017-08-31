@@ -168,4 +168,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 node_modules
-release
+releaserun.bat
+run.sh
+run.bat

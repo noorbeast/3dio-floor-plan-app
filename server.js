@@ -20,7 +20,7 @@ startApiServer({
 }, {
   // server configs
   port: configs.port,
-  apiPath: 'api/v1',
+  apiPath: 'api/v2',
   staticDir: configs.staticDir,
   corsAllowedDomains: configs.corsAllowedDomains
 })
