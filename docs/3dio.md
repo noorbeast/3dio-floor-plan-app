@@ -16,7 +16,7 @@ Copy secret API key
   * OSX / Linux: `export IO3D_SECRET_API_KEY="xxxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"`
 * On your heroku deployment:
  ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_06-18-14_2RPkfX/floor-plan-to-3d___Settings___Heroku_and_repositories.jpg)
- ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_07-42-42_Yk2zoD/floor-plan-to-3d___Settings___Heroku.jpg)
+ ![](https://storage.3d.io/535e624259ee6b0200000484/floor-plan-to-3d___Settings___Heroku.jpg)
 
 ### Done :)
 
