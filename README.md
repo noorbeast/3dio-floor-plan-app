@@ -4,6 +4,8 @@
 * Stores conversion related info in your database.
 * Sends email notification to your cutomer when 3d model is ready.
 
+Live demo: https://spaces.archilogic.com/order
+
 ## Install
 
 ### 1. **Deploy app to heroku by clicking this button:**
