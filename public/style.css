@@ -147,3 +147,13 @@ label.order-label {
     text-align: center;
     display: block
 }
+
+.detail-links {
+    width: 850px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    padding: 40px 50px;
+    text-align: right;
+}
