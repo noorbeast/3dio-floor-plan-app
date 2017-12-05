@@ -34,3 +34,4 @@ After a few seconds a confirmation screen should appear:
    ![](https://storage.3d.io/279ecbf2-02eb-49b0-a7b8-ddcdafdfb4fb/2017-08-17_13-35-10_cN1gXh/floor-plan-to-3d___Settings___Heroku.jpg)
    
  ### DONE :)
+The Sendgrid setup is done, but don't forget to [setup the environment variables!](https://github.com/archilogic-com/3dio-floor-plan-app#3-set-environment-variables)
