@@ -1,14 +1,14 @@
 {
-  "name": "3dio-floor-plan-app",
+  "name": "vr-home-design-studio",
   "version": "1.0.0",
   "description": "Convert floor plan images into 3d models using 3d.io APIs",
-  "homepage": "https://floorplan.3d.io",
-  "repository": "archilogic-com/3dio-floor-plan-app",
+  "homepage": "https://home-design.herokuapp.com/",
+  "repository": "noorbeast/3dio-floor-plan-app",
   "license": "MIT",
   "author": {
-    "name": "archilogic",
-    "email": "dev.rocks@archilogic.com",
-    "url": "https://archilogic.com"
+    "name": "todaysimaginarium",
+    "email": "noorbeast@gmail.com",
+    "url": "http://todaysimaginarium.com.au/"
   },
   "scripts": {
     "start": "node server.js"
