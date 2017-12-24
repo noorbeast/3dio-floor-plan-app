@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <title>VR Home Design Studio App</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,64 +11,48 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="helium-css/helium.js"></script>
     <script src="https://dist.3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
-</head>
+  </head>
+  <body>
+    <form class="order-container" onsubmit="return submitHandler()">
+      <div class="row">
+        <h2>Turn your floor plan into an interactive 3D model</h2>
+        <div id="file-drop-box" class="order-info-upload">
+          <div class="content-dropzone free-order" title="3D model floor plan upload"
 
-<body>
-    <form class='order-container' onsubmit="return submitHandler()">
-        <div class='row'>
-            <h2>Turn your floor plan into an interactive 3D model</h2>
-            <div id="file-drop-box" class="order-info-upload">
-                <div class="content-dropzone free-order" title="3D model floor plan upload" file-keys="">
-                    <label class="dropzone-area">
-                        <div class="dropzone-text">
-                          <span class="dropzone-info">
-                            <img width="60px" src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-upload-floorplan.svg">
-                            Drag and drop or click here to upload your floor plan                          </span>
-                        </div>
-                    </label>
-                </div>
-            </div>
-            <div class="order-field">
-                <input name='floor-plan=url' id="floor-plan-url" type='text' required="required" class="order-input">
-                <label for="address" class="order-label"> ... or enter a floor plan image URL here</label>
-            </div>
+            file-keys=""> <label class="dropzone-area">
+              <div class="dropzone-text"> <span class="dropzone-info"> <img src="https://spaces-static.archilogic.com/build/170825-123340-a421eda/admin/img/icon-upload-floorplan.svg"
+
+                    width="60px"> Drag and drop or click here to upload your
+                  floor plan image </span> </div>
+            </label> </div>
         </div>
-        <div class='row'>
-            <div class="order-text address">
-                Conversion can take up to 48 hours, so please enter an email-address and we can notify you when your model is ready </div>
-            <div style="" class="order-field">
-                <input id="email" required="required" class="order-input popup-order-input-invalid" style="width: 100%;">
-                <label for="address" class="order-label">Email</label>
-            </div>
+        <div class="order-field"><br>
         </div>
+      </div>
+      <div class="row">
+        <div class="order-text address"> Your house model can take up to 48 hours to build, so
+          please enter an email-address and we can notify you when your model is
+          ready </div>
+        <div style="" class="order-field"> <input id="email" required="required"
 
-        <div class='row'>
-            <div class="order-text address">
-                Optional: Add a location name for lighting settings
-            </div>
-            <div class="order-field address">
-                <input id="address" placeholder="e.g. Launceston" class="order-input" autocomplete="off">
-            </div>
+            class="order-input popup-order-input-invalid" style="width: 100%;">
+          <label for="address" class="order-label">Your Email</label> </div>
+      </div>
+      <div class="row">
+        <div class="order-text address"> Optional: <span style="color: rgb(39, 41, 43); font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: 0.3px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 248, 250); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Add
+            the address of your build site so we can put your house model on your block</span></div>
+        <div class="order-field address"> <input id="address" placeholder="e.g. 13 Freshwater St, Beaumaris TAS"
 
-        </div>
-
-        <div class='row'>
-            <button type="submit" class="convert-button order-btn">
-                <span>Convert</span>
-            </button>
-            <button  class="order-btn white" type="button" id="btn-clear">
-                <span>Clear All Fields</span>
-            </button>
-            <div id="api-info" class="order-text"></div>
-        </div>
-
+            class="order-input" autocomplete="off"> </div>
+      </div>
+      <div class="row"> <button type="submit" class="convert-button order-btn">
+          <span>Submit</span>&nbsp;</button>
+        <div id="api-info" class="order-text"></div>
+      </div>
     </form>
-    <div class="row detail-links">
-      <a href="http://todaysimaginarium.com.au" target="_blank">Home</a> 
-
+    <div class="row detail-links"> <br>
     </div>
     <div id="api-info"></div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
